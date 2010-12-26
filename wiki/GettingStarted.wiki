@@ -1,9 +1,8 @@
 #summary Getting Started with stompJ
 
-
 = Introduction =
 
-Add your content here.
+stompJ is an easy and straight forward API to
 
 
 = Details =
