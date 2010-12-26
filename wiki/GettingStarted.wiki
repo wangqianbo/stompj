@@ -1,4 +1,5 @@
 #summary Getting Started with stompJ
+#labels Featured
 
 == Introduction ==
 
