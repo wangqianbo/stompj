@@ -2,10 +2,17 @@
 
 = Introduction =
 
-stompJ is an easy and straight forward API to
+stompJ is an easy and straight forward API and can be used with any Stomp broker. This document is to quickly familiarize with the API and you should be start using it right after reading the document.
 
 
-= Details =
+= Connection =
+
+The first step before sending or receiving the messages is to establish a connection with the server (or Stomp broker):
+
+{{{
+Connection con = new Connection("localhost", 61613, "userid", "password");
+con.connect();
+}}}
 
 Add your content here.  Format your content with:
   * Text in *bold* or _italic_
