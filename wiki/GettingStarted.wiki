@@ -46,8 +46,8 @@ With above the connection will start getting the messages from the mentioned des
 
 {{{
 con.addMessageHandler("/test/Q2", new MessageHandler() {
-
-public void onMessage(Message msg) {
-    System.out.println(msg.getContentAsString());
+    public void onMessage(Message msg) {
+      System.out.println(msg.getContentAsString());
+    }
 });
 }}}
