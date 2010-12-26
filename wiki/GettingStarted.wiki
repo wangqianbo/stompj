@@ -32,3 +32,6 @@ msg.setProperty("type", "text/plain");
 msg.setContentAsString("Another test message!");
 con.send(msg, "/test/Q1");
 }}}
+
+
+== Receiving messages ==
