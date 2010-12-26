@@ -35,3 +35,19 @@ con.send(msg, "/test/Q1");
 
 
 == Receiving messages ==
+
+In order to receive a message from a destination, you have to subscribe to a destination:
+
+{{{
+con.subscribe("/test/Q1");
+}}}
+
+With above the connection will start getting the messages from the mentioned destination. In order to be informed about the incoming messages, a message handler is to be added for a particular destination:
+
+{{{
+con.addMessageHandler("/test/Q2", new MessageHandler() {
+
+public void onMessage(Message msg) {
+    System.out.println(msg.getContentAsString());
+});
+}}}
