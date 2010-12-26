@@ -14,6 +14,7 @@ Connection con = new Connection("localhost", 61613, "userid", "password");
 con.connect();
 }}}
 
+connect() will return null if connection was done successfully. If the connection was rejeced by the server (by sending back and ERROR frame), e.g. because of invalid user/password, an Error object will be returned.
 
 = Sending message =
 
@@ -26,4 +27,8 @@ con.send("Test Message!", "/test/Q1");
 Another way is to create a Message object. With this not only you can set the properties on message but also send binary content:
 
 {{{
-DefaultM
+DefaultMessage msg = new DefaultMessage();
+msg.setProperty("type", "text/plain");
+msg.setContentAsString("Another test message!");
+con.send(msg, "/test/Q1");
+}}}
