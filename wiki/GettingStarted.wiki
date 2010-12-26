@@ -64,3 +64,11 @@ con.setErrorHandler(new ErrorHandler() {
     }
 });
 }}}
+
+== Disconnect ==
+
+Don't for get to disconnect the connection once you are done:
+
+{{{
+con.disconnect();
+}}}
