@@ -3,7 +3,7 @@
 
 == Introduction ==
 
-stompJ is an easy and straight forward API and can be used with any Stomp broker. This document is to quickly familiarize with the API and you should be start using it right after reading the document.
+stompJ is an easy and straight forward API and can be used with any Stomp broker. This document is to quickly you familiarize with the API and you should be start using it right after reading the document.
 
 
 == Connection ==
