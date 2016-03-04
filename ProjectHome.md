@@ -1,0 +1,1 @@
+Stomp client for Java is a library that can be used with any Java program to communicate with a Stomp Broker.
